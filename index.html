@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zine Rodeo</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      color: #111;
+      font-family: monospace, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-family: monospace, sans-serif;
+      border: 1px solid #111;
+      background: #fff;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #111;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>zine rodeo</h1>
+
+  <p>
+    i'm a creative and nobody knows it. <br>
+    so i'm giving away zines for free.<br>
+    if you want one, tell me where to send it.<br>
+    no catch. no shipping cost. no mailing list.<br>
+    just you, me, and whatever shows up.
+  </p>
+
+  <form action="https://formspree.io/f/myzwzngq" method="POST">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="address" placeholder="Mailing Address" required>
+    <textarea name="noticed" placeholder="Tell me one thing you noticed today (optional)"></textarea>
+    <button type="submit">send me a zine</button>
+  </form>
+
+</body>
+</html>
